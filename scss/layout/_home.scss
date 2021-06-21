@@ -1,0 +1,51 @@
+.main {
+  background-image: url("../../images/fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10rem 2rem;
+  margin: 0 auto;
+}
+
+.home-info {
+  &-subtitle {
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+  }
+
+  &-button {
+    width: 30%;
+  }
+
+  &-footer {
+    margin-top: 7rem;
+    border-top: 1px solid $roxo-claro;
+    padding-top: 1rem;
+  }
+}
+
+.home-img-box {
+  position: relative;
+  width: 100%;
+}
+
+.home-img {
+  border: 2px solid $roxo-escuro;
+  &-1 {
+    width: 45rem;
+    height: 30rem;
+  }
+  &-2 {
+    width: 35rem;
+    height: 45rem;
+  }
+  &-3 {
+    width: 48rem;
+    height: 28rem;
+  }
+}
