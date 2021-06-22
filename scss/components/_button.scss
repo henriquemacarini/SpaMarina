@@ -5,16 +5,15 @@
 
   text-align: center;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: $branco;
+  text-decoration: none;
+
   &:hover {
     background-color: $roxo-escuro;
-  }
-
-  &-text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.8rem;
     color: $branco;
-    text-decoration: none;
   }
 }

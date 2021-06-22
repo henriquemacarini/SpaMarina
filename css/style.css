@@ -124,17 +124,16 @@ body {
   border-radius: 5px;
   padding: 1.7rem 3.5rem;
   text-align: center;
-}
-.button:hover {
-  background-color: #472065;
-}
-.button-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 1.8rem;
   color: #ffffff;
   text-decoration: none;
+}
+.button:hover {
+  background-color: #472065;
+  color: #ffffff;
 }
 
 .main {
@@ -240,9 +239,47 @@ body {
   background-color: #fcfaff;
   padding: 10rem 3rem;
 }
-.sobre-button {
-  width: 10%;
-  margin: 4rem auto;
+.sobre-text {
+  margin-bottom: 5rem;
+}
+.sobre-galeria {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+.sobre-galeria-left {
+  display: flex;
+  flex-direction: column;
+}
+.sobre-img {
+  border: 4px solid #9b5fca;
+  border-radius: 5px;
+  box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.sobre-img-1 {
+  top: 0;
+  left: 0;
+  width: 29rem;
+  height: 18rem;
+}
+.sobre-img-2 {
+  top: 10rem;
+  left: 0;
+  width: 29rem;
+  height: 17rem;
+  margin-left: 7rem;
+  margin-top: 3rem;
+}
+.sobre-img-3 {
+  width: 31rem;
+  height: 19rem;
+  align-self: center;
+}
+.sobre-img-4 {
+  width: 23rem;
+  height: 37rem;
 }
 
 /*# sourceMappingURL=style.css.map */
