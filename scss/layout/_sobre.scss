@@ -1,0 +1,10 @@
+.sobre {
+  text-align: center;
+  background-color: $fundo-branco;
+  padding: 10rem 3rem;
+
+  &-button {
+    width: 10%;
+    margin: 4rem auto;
+  }
+}

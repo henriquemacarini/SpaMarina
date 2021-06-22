@@ -1,54 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="./css/icon.css">
+    <link rel="stylesheet" href="./css/icon.css" />
 
     <!-- Main Css -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <section class="main">
-        <nav class="navigation">
-            <div class="logo">
-                <img src="./images/logo.png" alt="Spa Marina Macarini" class="logo-img">
-            </div>
-            <ul class="nav">
-                <li class="nav-item"><a href="" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Serviços</a></li>
-                <li class="nav-item button"><a href="" class="button-text">Contato</a></li>
-            </ul>
-        </nav>
-    
-        <section class="home">
+      <nav class="navigation">
+        <div class="logo">
+          <img
+            src="./images/logo.png"
+            alt="Spa Marina Macarini"
+            class="logo-img"
+          />
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Sobre nós</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Serviços</a></li>
+          <li class="nav-item button">
+            <a href="" class="button-text">Contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="home container">
+        <div class="row">
+          <div class="col-md-5 col-12">
             <div class="home-info">
-                
-                <h1 class="main-title home-info-title">O Melhor Lugar,<br>Para Você <span style="color: #9C7CC6;">Relaxar</span>...</h1>
-                <p class="text-info home-info-subtitle"><span class="lnr lnr-map-marker"></span>Blomendaal, Cidade das Flores</p>
-                <div href="" class="button home-info-button">
-                    <a href="" class="button-text">Contato</a>
-                </div>
-    
-                <p class="text-info  home-info-footer">- Um espaço único e exclusivo, decorado especialmente<br> para as práticas de relaxamento e técnicas terapêuticas.</p>
+              <h1 class="main-title home-info-title">
+                O Melhor Lugar,<br />Para Você
+                <span style="color: #9c7cc6">Relaxar</span>...
+              </h1>
+              <p class="footer-text home-info-subtitle">
+                <span class="lnr lnr-map-marker"></span>Blomendaal, Cidade das
+                Flores
+              </p>
+              <div href="" class="button home-info-button">
+                <a href="" class="button-text">Contato</a>
+              </div>
+
+              <p class="footer-text home-info-footer">
+                - Um espaço único e exclusivo, decorado especialmente<br />
+                para as práticas de relaxamento e técnicas terapêuticas.
+              </p>
             </div>
+          </div>
+          <div class="col-md-7 col-12">
             <div class="home-img-box">
-                <img src="./images/pier.jpeg" alt="" class="home-img-1 home-img">
-                <img src="./images/janela.jpeg" alt="" class="home-img-2 home-img">
-                <img src="./images/camas2.jpeg" alt="" class="home-img-3 home-img">
+              <img
+                src="./images/pier.jpeg"
+                alt=""
+                class="home-img-1 home-img"
+              />
+              <img
+                src="./images/janela.png"
+                alt=""
+                class="home-img-2 home-img"
+              />
+              <img
+                src="./images/camas2.jpeg"
+                alt=""
+                class="home-img-3 home-img"
+              />
             </div>
-    
-        </section>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <section class="sobre">
+      <h2 class="page-info mb-5">SOBRE NÓS</h2>
+      <h1 class="page-title mb-5">CONFORTÁVEL, LINDO E GLAMOUROSO</h1>
+      <h3 class="page-subtitle mb-5">
+        Nosso espaço conta com sala climatizada, sauna úmida, escalda-pés e
+        banheira com cromoterapia,<br />
+        hidromassagem e sistema de bolhas (Air Blower) que ativa a circulação e
+        é<br />
+        extremamente relaxante.
+      </h3>
+      <div href="" class="button sobre-button">
+        <a href="" class="button-text">Contato</a>
+      </div>
+    </section>
+  </body>
+
+  <!-- JS Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
 </html>
