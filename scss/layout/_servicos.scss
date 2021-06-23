@@ -1,0 +1,12 @@
+.servicos {
+  text-align: center;
+  background-color: $fundo-roxo;
+  padding: 10rem 3rem;
+
+  &-cardRow {
+    margin: 10rem auto 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
