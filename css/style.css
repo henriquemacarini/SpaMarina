@@ -194,6 +194,12 @@ body {
   text-align: right;
 }
 
+.imagemFinal {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
 .servicosCard {
   height: 50rem;
   width: 40rem;
@@ -246,6 +252,19 @@ body {
   background-image: url(../../images/massagem.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5rem 10rem;
+  background-image: url(../../images/fundo3.png);
+  background-size: cover;
+}
+.footer-img {
+  width: 20rem;
 }
 
 .main {
@@ -349,7 +368,8 @@ body {
 
 .servicos {
   text-align: center;
-  background-color: #f5eefd;
+  background-image: url(../../images/fundo2.png);
+  background-size: contain;
   padding: 10rem 3rem;
 }
 .servicos-cardRow {
@@ -397,11 +417,12 @@ body {
 
 .sobre {
   text-align: center;
-  background-color: #fcfaff;
+  background-image: url(../../images/fundo3.png);
+  background-size: cover;
   padding: 10rem 3rem;
 }
 .sobre-text {
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 .sobre-galeria {
   display: flex;

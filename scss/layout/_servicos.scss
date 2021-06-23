@@ -1,6 +1,7 @@
 .servicos {
   text-align: center;
-  background-color: $fundo-roxo;
+  background-image: url(../../images/fundo2.png);
+  background-size: contain;
   padding: 10rem 3rem;
 
   &-cardRow {

@@ -1,10 +1,11 @@
 .sobre {
   text-align: center;
-  background-color: $fundo-branco;
+  background-image: url(../../images/fundo3.png);
+  background-size: cover;
   padding: 10rem 3rem;
 
   &-text {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 
   &-galeria {
