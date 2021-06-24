@@ -507,6 +507,11 @@ body {
   }
 }
 @media (max-width: 75em) {
+  .servicoTipo {
+    width: 100%;
+  }
+}
+@media (max-width: 75em) {
   .servicoTipo-inver {
     flex-direction: column-reverse;
   }

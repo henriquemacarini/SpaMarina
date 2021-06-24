@@ -31,6 +31,9 @@
     flex-direction: column;
     gap: 2rem;
   }
+  @include respons(big-tablet) {
+    width: 100%;
+  }
 
   &-inver {
     @include respons(big-tablet) {
