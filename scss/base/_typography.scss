@@ -22,8 +22,8 @@
   color: $roxo-escuro;
 
   @include respons(phone) {
-    font-size: 2rem;
-    line-height: 2.1rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     letter-spacing: 0em;
   }
 }
@@ -38,8 +38,8 @@
   color: $roxo-claro;
 
   @include respons(phone) {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
     letter-spacing: 0em;
   }
 }
@@ -50,13 +50,13 @@
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.1rem;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
   color: $roxo-claro;
 
   @include respons(phone) {
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.6rem;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.5rem;
   }
 }
 

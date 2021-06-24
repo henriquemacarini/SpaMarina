@@ -108,8 +108,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .page-title {
-    font-size: 2rem;
-    line-height: 2.1rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     letter-spacing: 0em;
   }
 }
@@ -125,8 +125,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .page-subtitle {
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
     letter-spacing: 0em;
   }
 }
@@ -137,14 +137,14 @@ body {
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2.1rem;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.5rem;
   color: #9c7cc6;
 }
 @media (max-width: 37.5em) {
   .page-info {
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.6rem;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.5rem;
   }
 }
 
@@ -451,11 +451,15 @@ body {
 .nav {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
-.nav-item {
+.nav-item:not(:first-of-type) {
   margin-left: 10rem;
+}
+@media (max-width: 56.25em) {
+  .nav-item:not(:first-of-type) {
+    margin-left: 5rem;
+  }
 }
 .nav-link {
   font-family: Roboto;
