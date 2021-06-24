@@ -4,23 +4,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 3rem 10rem;
-}
 
-.logo-img {
-  width: 15rem;
-}
-
-.nav {
-  list-style: none;
-  display: flex;
-  align-items: center;
+  &-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
 
   &-item:not(:first-of-type) {
     margin-left: 10rem;
-
-    @include respons(tablet) {
-      margin-left: 5rem;
-    }
   }
 
   &-link {
@@ -38,7 +30,101 @@
       color: $roxo-escuro;
     }
   }
+
+  &-content {
+    display: none;
+  }
+
+  @include respons(tablet) {
+    padding: 3rem 7rem;
+
+    &-content {
+      display: block;
+      position: relative;
+
+      &-checkbox {
+        display: none;
+      }
+
+      &-button {
+        height: 6rem;
+        width: 6rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: $fundo-roxo;
+        border-radius: 50%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        text-align: center;
+        cursor: pointer;
+        z-index: 8000;
+
+        @include respons(phone) {
+          height: 5rem;
+          width: 5rem;
+        }
+      }
+
+      &-background {
+        height: 5rem;
+        width: 5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-color: $roxo;
+        transition: transform 0.8s cubic-bezier(0.65, -0.01, 0.35, 1.02);
+        position: absolute;
+        z-index: 7000;
+
+        //transform: scale(90);
+        @include respons(phone) {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+
+      &-checkbox:checked ~ &-background {
+        transform: scale(80);
+      }
+
+      &-icon {
+        font-size: 3rem;
+        display: inline-block;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        position: relative;
+      }
+    }
+
+    &-nav {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1500;
+      opacity: 0;
+      width: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &-list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
 
-@include respons(tablet) {
+.logo-img {
+  width: 15rem;
+  @include respons(tablet) {
+    width: 10rem;
+  }
 }
