@@ -313,6 +313,7 @@ body {
   padding: 5rem 5rem 10rem;
   background-image: url(../../images/fundo3.png);
   background-size: cover;
+  background-color: #fcfaff;
 }
 .footer-img {
   width: 20rem;
@@ -469,27 +470,44 @@ body {
   font-weight: bold;
   color: #472065;
 }
-.navigation-content {
+
+.logo-img {
+  width: 15rem;
+}
+
+.navigationMobile {
   display: none;
 }
+
 @media (max-width: 56.25em) {
   .navigation {
-    padding: 3rem 7rem;
-  }
-  .navigation-content {
-    display: block;
-    position: relative;
-  }
-  .navigation-content-checkbox {
     display: none;
   }
-  .navigation-content-button {
+
+  .navigationMobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+  }
+  .navigationMobile-logo {
+    width: 10rem;
+  }
+
+  .mobileNav {
+    position: relative;
+    display: inline-block;
+  }
+  .mobileNav-checkbox {
+    display: none;
+  }
+  .mobileNav-button {
     height: 6rem;
     width: 6rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
+    right: 5rem;
+    top: 4.5rem;
     background-color: #fcfaff;
     border-radius: 50%;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
@@ -499,60 +517,66 @@ body {
   }
 }
 @media (max-width: 56.25em) and (max-width: 37.5em) {
-  .navigation-content-button {
+  .mobileNav-button {
     height: 5rem;
     width: 5rem;
   }
 }
 @media (max-width: 56.25em) {
-  .navigation-content-background {
+  .mobileNav-background {
     height: 5rem;
     width: 5rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
+    right: 5.5rem;
+    top: 5rem;
     border-radius: 50%;
     background-color: #9b5fca;
     transition: transform 0.8s cubic-bezier(0.65, -0.01, 0.35, 1.02);
-    position: absolute;
     z-index: 7000;
   }
 }
 @media (max-width: 56.25em) and (max-width: 37.5em) {
-  .navigation-content-background {
+  .mobileNav-background {
     height: 3rem;
     width: 3rem;
   }
 }
 @media (max-width: 56.25em) {
-  .navigation-content-checkbox:checked ~ .navigation-content-background {
-    transform: scale(80);
+  .mobileNav-checkbox:checked ~ .mobileNav-background {
+    transform: scale(70);
   }
 }
 @media (max-width: 56.25em) {
-  .navigation-content-icon {
-    font-size: 3rem;
+  .mobileNav-icon {
+    font-size: 3.5rem;
     display: inline-block;
     top: 50%;
-    left: 53%;
+    left: 55%;
     transform: translate(-50%, -50%);
     position: relative;
   }
 }
+@media (max-width: 56.25em) and (max-width: 37.5em) {
+  .mobileNav-icon {
+    font-size: 3rem;
+    top: 50%;
+    left: 55%;
+  }
+}
 @media (max-width: 56.25em) {
-  .navigation-nav {
+  .mobileNav-nav {
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1500;
+    z-index: 7500;
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 }
 @media (max-width: 56.25em) {
-  .navigation-list {
+  .mobileNav-list {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -562,21 +586,46 @@ body {
     width: 100%;
   }
 }
-
-.logo-img {
-  width: 15rem;
+@media (max-width: 56.25em) {
+  .mobileNav-item {
+    width: 60%;
+    margin: 3rem auto;
+    padding: 3rem 0;
+  }
+  .mobileNav-item:not(:last-of-type) {
+    border-bottom: 2px solid #fcfaff;
+  }
 }
 @media (max-width: 56.25em) {
-  .logo-img {
-    width: 10rem;
+  .mobileNav-link {
+    font-family: Roboto;
+    font-size: 3.5rem;
+    color: #fcfaff;
+    text-decoration: none;
+    transition: all 0.2s;
+    line-height: 2.1rem;
+    letter-spacing: 1rem;
   }
+  .mobileNav-link:hover {
+    font-weight: bold;
+    color: #472065;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-checkbox:checked ~ .mobileNav-nav {
+    opacity: 1;
+    width: 100%;
+  }
+}
+.navigation-content-checkbox:checked ~ .nav {
+  opacity: 1;
 }
 
 .servicos {
   text-align: center;
   background-image: url(../../images/fundo2.png);
   background-size: contain;
-  padding: 10rem 2rem;
+  padding: 10rem 0;
   background-color: #f5eefd;
 }
 .servicos-cardRow {
@@ -586,6 +635,9 @@ body {
   flex-wrap: wrap;
 }
 
+.muitoMais {
+  padding: 0 2rem;
+}
 @media (max-width: 75em) {
   .muitoMais {
     margin-bottom: 5rem;
@@ -597,7 +649,8 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  margin: 5rem auto 5rem;
+  margin: 0 auto 5rem;
+  padding: 0 2rem;
   gap: 10rem;
   flex-wrap: wrap;
 }
@@ -656,7 +709,7 @@ body {
   text-align: center;
   background-image: url(../../images/fundo3.png);
   background-size: cover;
-  padding: 10rem 2rem;
+  padding: 10rem 0;
   background-color: #fcfaff;
 }
 .sobre-text {
