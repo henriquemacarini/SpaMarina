@@ -11,20 +11,20 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%; // 1rem == 10px
 
-  // @include respons(big-tablet) {
-  //     //e tablet
-  //     font-size: 56.25%;
-  // }
+  @include respons(big-tablet) {
+    //e tablet
+    font-size: 56.25%;
+  }
 
-  // @include respons(tablet) {
-  //     //e tablet
-  //     font-size: 50%;
-  // }
+  @include respons(tablet) {
+    //e tablet
+    font-size: 50%;
+  }
 
-  // @include respons(big-screen) {
-  //     //e tablet
-  //     font-size: 75%;
-  // }
+  @include respons(big-screen) {
+    //e tablet
+    font-size: 75%;
+  }
 }
 
 body {
