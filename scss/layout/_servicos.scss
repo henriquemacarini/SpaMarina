@@ -22,19 +22,17 @@
 
 .servicoTipo {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
   margin: 0 auto 5rem;
-  padding: 0 2rem;
+  padding: 0 4rem;
   gap: 10rem;
-  flex-wrap: wrap;
+  width: 80%;
 
   @include respons(big-tablet) {
     flex-direction: column;
     gap: 2rem;
-  }
-  @include respons(big-tablet) {
     width: 100%;
   }
 
@@ -61,11 +59,16 @@
   }
 
   &-img {
-    width: 80%;
+    width: 45%;
     border: 4px solid $roxo-claro;
     border-radius: 5px;
+    flex: 1;
     @include respons(big-tablet) {
       margin-bottom: 10rem;
+      width: 60%;
+    }
+    @include respons(tablet) {
+      width: 80%;
     }
 
     &-spaDay {
