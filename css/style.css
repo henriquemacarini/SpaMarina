@@ -626,7 +626,7 @@ body {
   text-align: center;
   background-image: url(../../images/fundo2.png);
   background-size: contain;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   background-color: #f5eefd;
 }
 .servicos-cardRow {
@@ -636,9 +636,6 @@ body {
   flex-wrap: wrap;
 }
 
-.muitoMais {
-  padding: 0 2rem;
-}
 @media (max-width: 75em) {
   .muitoMais {
     margin-bottom: 5rem;
@@ -651,7 +648,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 5rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   gap: 10rem;
   width: 80%;
 }
@@ -713,7 +710,7 @@ body {
   text-align: center;
   background-image: url(../../images/fundo3.png);
   background-size: cover;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   background-color: #fcfaff;
 }
 .sobre-text {

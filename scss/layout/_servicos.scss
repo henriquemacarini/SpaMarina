@@ -2,7 +2,7 @@
   text-align: center;
   background-image: url(../../images/fundo2.png);
   background-size: contain;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
   background-color: $fundo-roxo;
 
   &-cardRow {
@@ -14,7 +14,6 @@
 }
 
 .muitoMais {
-  padding: 0 2rem;
   @include respons(big-tablet) {
     margin-bottom: 5rem;
   }
@@ -26,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 5rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   gap: 10rem;
   width: 80%;
 

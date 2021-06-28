@@ -68,18 +68,26 @@
             <span class="lnr lnr-menu mobileNav-icon">&nbsp;</span>
           </label>
 
-          <div class="mobileNav-background">&nbsp;</div>
+          <div class="mobileNav-background" id="mobileNav-background">
+            &nbsp;
+          </div>
 
           <div class="mobileNav-nav">
             <ul class="mobileNav-list">
               <li class="mobileNav-item">
-                <a href="#inicio" class="mobileNav-link">Início</a>
+                <a href="#inicio" class="mobileNav-link" onclick="algo()"
+                  >Início</a
+                >
               </li>
               <li class="mobileNav-item">
-                <a href="#sobre" class="mobileNav-link">Sobre nós</a>
+                <a href="#sobre" class="mobileNav-link" onclick="algo()"
+                  >Sobre nós</a
+                >
               </li>
               <li class="mobileNav-item">
-                <a href="#servicos" class="mobileNav-link">Serviços</a>
+                <a href="#servicos" class="mobileNav-link" onclick="algo()"
+                  >Serviços</a
+                >
               </li>
               <li class="mobileNav-item">
                 <a href="" class="mobileNav-link">Contato</a>
@@ -813,4 +821,12 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"
   ></script>
+
+  <!-- JS para o menu fechar -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(".mobileNav-item").click(function () {
+      $(".mobileNav-checkbox").click();
+    });
+  </script>
 </html>
