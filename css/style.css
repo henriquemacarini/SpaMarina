@@ -568,10 +568,10 @@ body {
     height: 100vh;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: -50%;
     transform: translate(-50%, -50%);
     z-index: 7500;
-    opacity: 0;
+    opacity: 1;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -616,12 +616,9 @@ body {
   .mobileNav-checkbox:checked ~ .mobileNav-nav {
     opacity: 1;
     width: 100%;
+    left: 50%;
   }
 }
-.navigation-content-checkbox:checked ~ .nav {
-  opacity: 1;
-}
-
 .servicos {
   text-align: center;
   background-image: url(../../images/fundo2.png);
