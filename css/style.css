@@ -712,6 +712,7 @@ body {
 }
 .sobre-text {
   margin-bottom: 6rem;
+  padding: 0 5rem;
 }
 .sobre-galeria {
   display: flex;
